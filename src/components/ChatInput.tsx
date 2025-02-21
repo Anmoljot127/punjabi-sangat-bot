@@ -30,7 +30,9 @@ export function ChatInput({ onSend, maxLength = 1000, placeholder }: ChatInputPr
 
   const startVoiceInput = async () => {
     try {
-      const recognition = new (window.webkitSpeechRecognition || window.SpeechRecognition)();
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+      
       recognition.lang = "pa-IN"; // Set language to Punjabi
       recognition.continuous = false;
       recognition.interimResults = false;
