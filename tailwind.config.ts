@@ -35,8 +35,10 @@ export default {
           DEFAULT: "#FFD700",
           foreground: "#1A202C",
         },
-        background: "#FFF8F0",
-        foreground: "#1A202C",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        card: "hsl(var(--card))",
+        "card-foreground": "hsl(var(--card-foreground))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "#FF7722",
@@ -48,10 +50,9 @@ export default {
           DEFAULT: "#E2E8F0",
           foreground: "#64748B",
         },
-        card: {
-          DEFAULT: "#FFFFFF",
-          foreground: "#1A202C",
-        },
+      },
+      backgroundImage: {
+        'punjab-pattern': "url('/punjab-pattern.png')",
       },
       keyframes: {
         "accordion-down": {
